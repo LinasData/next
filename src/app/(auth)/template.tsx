@@ -10,7 +10,11 @@ const navLinks = [
     { name: "Forgot Password", href: "/forgot-password" },
 ];
 
-export default function AuthLayout({ children }: { childer: React.ReactNode }) {
+export default function AuthLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     const pathname = usePathname();
     const [input, setInput] = useState("");
     return (
